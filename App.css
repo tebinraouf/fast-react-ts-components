@@ -1,0 +1,42 @@
+fast-card {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: var(--type-ramp-plus-5-font-size);
+  line-height: var(--type-ramp-plus-5-line-height);
+}
+
+fast-card > fast-button {
+  align-self: flex-end;
+}
+
+fast-data-grid {
+  background-color: antiquewhite;
+}
+
+fast-anchored-region {
+  opacity: unset !important;
+}
+
+/* Required for Fast Avatar */
+fast-avatar {
+  --avatar-color-blue: blue;
+  --avatar-fill-accent-primary: #ccdfcc;
+}
+
+/* Required For Fast-Badge */
+fast-badge {
+  --badge-fill-primary: rgba(255, 0, 0, 1);
+  --badge-fill-secondary: #00ff00;
+  --badge-fill-transparent: transparent;
+  --badge-color-black: #000000;
+  --badge-color-white: #ffffff;
+}
+
+/* Breadcrumb */
+fast-breadcrumb {
+  background-color: #000000;
+}
