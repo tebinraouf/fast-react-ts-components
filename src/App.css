@@ -13,9 +13,7 @@ fast-card > fast-button {
   align-self: flex-end;
 }
 
-fast-data-grid {
-  background-color: antiquewhite;
-}
+
 
 fast-anchored-region {
   opacity: unset !important;
@@ -39,4 +37,24 @@ fast-badge {
 /* Breadcrumb */
 fast-breadcrumb {
   background-color: #000000;
+}
+
+/* Checkbox */
+
+fast-checkbox {
+  padding: 10px;
+  background-color: gray;
+  color:rgba(255, 0, 0, 1)
+}
+
+fast-accordion {
+  background-color: gray;
+}
+
+fast-accordion .button {
+  color: blue;
+}
+
+fast-data-grid {
+  background-color: rgb(17, 14, 10);
 }
