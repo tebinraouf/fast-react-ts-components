@@ -62,7 +62,7 @@ function App() {
   //       alert('not checked');
   //     }
   //   })
-      
+
 
   // }, [])
 
@@ -137,22 +137,22 @@ function App() {
       </div>
       <div>
         <h1>Checkbox</h1>
-        <FastCheckbox onChange={(e)=>alert(e.currentTarget.checked)}>Checkbox</FastCheckbox>
+        <FastCheckbox onChange={(e) => alert(e.currentTarget.checked)}>Checkbox</FastCheckbox>
       </div>
 
 
       <div>
         <h1>Accordion</h1>
-          <FastAccordion>
-            <FastAccordionItem>
-              <div slot='heading'></div>
-              Accordion one content
-            </FastAccordionItem>
-            <FastAccordionItem>
-              <div slot='heading'></div>
-              Accordion two content
-            </FastAccordionItem>
-          </FastAccordion>
+        <FastAccordion>
+          <FastAccordionItem>
+            <div slot='heading'></div>
+            Accordion one content
+          </FastAccordionItem>
+          <FastAccordionItem>
+            <div slot='heading'></div>
+            Accordion two content
+          </FastAccordionItem>
+        </FastAccordion>
       </div>
 
 
@@ -162,69 +162,63 @@ function App() {
       <div>
         <h1>Data Grid</h1>
         <h1>FastDataGrid - rowsData</h1>
-      <FastDataGrid
-        rowsData={[
-          {
-            item1: 'value 1-1',
-            item2: 'value 2-1',
-            item3: 'value 4-1',
-            item4: 'value 5-1',
-          },
-          {
-            item1: 'value 1-2',
-            item2: 'value 2-2',
-            item3: 'value 4-2',
-            item4: 'value 5-2',
-          },
-          {
-            item1: 'value 1-3',
-            item2: 'value 2-3',
-            item3: 'value 4-3',
-            item4: 'value 5-3',
-          },
-        ]}
-        id="fast-grid"
-      ></FastDataGrid>
-
-      <h1>FastDataGrid - Nested Components</h1>
-      <FastDataGrid id="fast-grid" grid-template-columns="1fr 1fr 1fr 1fr">
-        <FastDataGridRow row-type="header">
-          <FastDataGridCell grid-column="1" cell-type="columnheader">
-            <FastButton
-              appearance="accent"
-              onClick={() => alert('Button is Clicked!')}
-            >
-              Click Me
-            </FastButton>
-          </FastDataGridCell>
-          <FastDataGridCell grid-column="2" cell-type="columnheader">
-            Column 2
-          </FastDataGridCell>
-          <FastDataGridCell grid-column="3" cell-type="columnheader">
-            Column 3
-          </FastDataGridCell>
-          <FastDataGridCell grid-column="4" cell-type="columnheader">
-            Column 4
-          </FastDataGridCell>
-        </FastDataGridRow>
-        <FastDataGridRow>
-          <FastDataGridCell grid-column="1">1.1</FastDataGridCell>
-          <FastDataGridCell grid-column="2">1.2</FastDataGridCell>
-          <FastDataGridCell grid-column="3">1.3</FastDataGridCell>
-          <FastDataGridCell grid-column="4">1.4</FastDataGridCell>
-        </FastDataGridRow>
-        <FastDataGridRow>
-          <FastDataGridCell grid-column="1">2.1</FastDataGridCell>
-          <FastDataGridCell grid-column="2">2.2</FastDataGridCell>
-          <FastDataGridCell grid-column="3">2.3</FastDataGridCell>
-          <FastDataGridCell grid-column="4">2.4</FastDataGridCell>
-        </FastDataGridRow>
-      </FastDataGrid>
-      </div>
-
-
-      <div>
-        <h1>Data Grid</h1>
+        <FastDataGrid
+          rowsData={[
+            {
+              item1: 'value 1-1',
+              item2: 'value 2-1',
+              item3: 'value 4-1',
+              item4: 'value 5-1',
+            },
+            {
+              item1: 'value 1-2',
+              item2: 'value 2-2',
+              item3: 'value 4-2',
+              item4: 'value 5-2',
+            },
+            {
+              item1: 'value 1-3',
+              item2: 'value 2-3',
+              item3: 'value 4-3',
+              item4: 'value 5-3',
+            },
+          ]}
+          id="fast-grid"
+        ></FastDataGrid>
+        <h1>FastDataGrid - Nested Components</h1>
+        <FastDataGrid id="fast-grid" grid-template-columns="1fr 1fr 1fr 1fr">
+          <FastDataGridRow row-type="header">
+            <FastDataGridCell grid-column="1" cell-type="columnheader">
+              <FastButton
+                appearance="accent"
+                onClick={() => alert('Button is Clicked!')}
+              >
+                Click Me
+              </FastButton>
+            </FastDataGridCell>
+            <FastDataGridCell grid-column="2" cell-type="columnheader">
+              Column 2
+            </FastDataGridCell>
+            <FastDataGridCell grid-column="3" cell-type="columnheader">
+              Column 3
+            </FastDataGridCell>
+            <FastDataGridCell grid-column="4" cell-type="columnheader">
+              Column 4
+            </FastDataGridCell>
+          </FastDataGridRow>
+          <FastDataGridRow>
+            <FastDataGridCell grid-column="1">1.1</FastDataGridCell>
+            <FastDataGridCell grid-column="2">1.2</FastDataGridCell>
+            <FastDataGridCell grid-column="3">1.3</FastDataGridCell>
+            <FastDataGridCell grid-column="4">1.4</FastDataGridCell>
+          </FastDataGridRow>
+          <FastDataGridRow>
+            <FastDataGridCell grid-column="1">2.1</FastDataGridCell>
+            <FastDataGridCell grid-column="2">2.2</FastDataGridCell>
+            <FastDataGridCell grid-column="3">2.3</FastDataGridCell>
+            <FastDataGridCell grid-column="4">2.4</FastDataGridCell>
+          </FastDataGridRow>
+        </FastDataGrid>
       </div>
 
       <div>
